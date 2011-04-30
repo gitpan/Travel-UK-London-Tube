@@ -1,4 +1,4 @@
-﻿#!perl
+#!perl
 
 use Test::More tests => 2;
 
@@ -22,7 +22,7 @@ $mappings = { 'A' => ['B'],
               'B' => ['A','C','E'],
               'C' => ['B','D'],
               'D' => ['E','C'],
-              'E' => ['B','D']};      
+              'E' => ['B','D']};
 $tube->set_node_mappings($mappings);
 @route = $tube->get_shortest_route('A', 'E');
 @expected = ('A','B','E');

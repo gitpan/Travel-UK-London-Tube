@@ -1,4 +1,7 @@
 Revision history for Travel::UK::London::Tube
 
+0.02    Sat Apr 30 09:39:20 2011
+        - Changed the encoding of unit test script to ASCII DOS|UNIX.
+
 0.01    Tue Apr 26 17:53:11 2011
         - Branch of earlier uploaded Map::Tube v2.19 as it is now registered with a new name.

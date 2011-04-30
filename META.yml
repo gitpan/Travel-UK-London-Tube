@@ -18,10 +18,10 @@ name: Travel-UK-London-Tube
 provides:
   Travel::UK::London::Tube:
     file: lib/Travel/UK/London/Tube.pm
-    version: 0.01
+    version: 0.02
   Travel::UK::London::Tube::Node:
     file: lib/Travel/UK/London/Tube/Node.pm
-    version: 0.01
+    version: 0.02
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

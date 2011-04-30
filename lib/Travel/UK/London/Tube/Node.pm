@@ -12,11 +12,11 @@ Travel::UK::London::Tube::Node - Defines the node for Travel::UK::London::Tube.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 Readonly my $BAKERLOO => {
     'Kilburn Park'        => 'B11',
@@ -501,7 +501,7 @@ Readonly my $LINE => {
 
 This  is  the  core  method of the module, where we actually define the relationship among the
 diffrerent  nodes. I have taken extra care to depict the relationship. However I would be more
-than happy to receieve any suggestion to improve the logic. Please note "Transport for London" 
+than happy to receieve any suggestion to improve the logic. Please note "Transport for London"
 is the owner of the data used here.
 
   use strict; use warnings;
@@ -920,7 +920,7 @@ sub load_nodes
              %{$OVERGROUND},
              %{$PICCADILLY},
              %{$VICTORIA}} unless defined $info;
-            
+
     my $nodes = {};
     foreach my $code (keys %{$info})
     {
@@ -971,7 +971,7 @@ sub load_node_lines
 
 =head2 upcase_node_names()
 
-This loads all the nodes with name in uppercase.This is to allow case-insensitive name lookup. 
+This loads all the nodes with name in uppercase.This is to allow case-insensitive name lookup.
 User can also provide the node list otherwise it will pick the default list.
 
   use strict; use warnings;

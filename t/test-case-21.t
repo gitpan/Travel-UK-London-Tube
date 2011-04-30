@@ -1,4 +1,4 @@
-﻿#!perl
+#!perl
 
 use Test::More tests => 4;
 
@@ -10,15 +10,15 @@ $tube     = Travel::UK::London::Tube->new();
              'Shadwell',
              'Monument',
              'Cannon Street');
-			 
-@route = $tube->get_shortest_route('Westferry', 'Cannon        Street');			 
+
+@route = $tube->get_shortest_route('Westferry', 'Cannon        Street');
 ok(eq_array(\@route, \@expected));
 
-@route = $tube->get_shortest_route('    Westferry', 'Cannon        Street');			 
+@route = $tube->get_shortest_route('    Westferry', 'Cannon        Street');
 ok(eq_array(\@route, \@expected));
 
-@route = $tube->get_shortest_route('Westferry    ', 'Cannon        Street');			 
+@route = $tube->get_shortest_route('Westferry    ', 'Cannon        Street');
 ok(eq_array(\@route, \@expected));
 
-@route = $tube->get_shortest_route('    Westferry    ', 'Cannon        Street');			 
+@route = $tube->get_shortest_route('    Westferry    ', 'Cannon        Street');
 ok(eq_array(\@route, \@expected));

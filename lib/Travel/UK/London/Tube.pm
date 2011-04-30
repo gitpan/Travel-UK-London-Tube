@@ -14,27 +14,27 @@ Travel::UK::London::Tube - Interface to the London Tube Map.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 DESCRIPTION
 
 The module intends to provide you as much information as possible from London Tube Map through
-perl  interface.  The  very  first thing anyone would like to know from any map is to find the 
-shortest  route  between  two  point. This is exactly what I am trying to solve at the moment. 
+perl  interface.  The  very  first thing anyone would like to know from any map is to find the
+shortest  route  between  two  point. This is exactly what I am trying to solve at the moment.
 However I  would  be adding more interesting information very soon. This module covers some of
-the underground lines managed by Travel for London. It is far from complete  and bound to have 
-missing  links  and  incorrect  mapping. Please feel free to shout back to me, if you find any 
-error/issue. While trying to find the shortest route,it takes into account the number of stops 
-one has to go through to reach the destination.  I do agree, at times, you wouldn't mind going 
+the underground lines managed by Travel for London. It is far from complete  and bound to have
+missing  links  and  incorrect  mapping. Please feel free to shout back to me, if you find any
+error/issue. While trying to find the shortest route,it takes into account the number of stops
+one has to go through to reach the destination.  I do agree, at times, you wouldn't mind going
 through few extra stops, to avoid changing lines. I might add this behaviour in future. Please
-note Travel::UK::London::Tube doesn't try to explain Dijkstra  algorithm but to provide a perl 
+note Travel::UK::London::Tube doesn't try to explain Dijkstra  algorithm but to provide a perl
 interface to the London Tube Map.
 It covers Bakerloo, Central, Circle, District, DLR, Hammersmith & City, Jubilee, Metropolitan,
-Northern,Overground,Piccadilly, Victoria and Waterloo & City. Here is the link to the official 
+Northern,Overground,Piccadilly, Victoria and Waterloo & City. Here is the link to the official
 London Tube Map:
 
 http://www.tfl.gov.uk/assets/downloads/standard-tube-map.pdf
@@ -93,7 +93,7 @@ sub get_shortest_route
     my $to   = shift;
     croak("ERROR: Either FROM/TO node is undefined.\n")
         unless (defined($from) && defined($to));
-   
+
     # Ignore if there are more than one space between the node's name.
     # e.g. "Bakers     Street" would be treated as "Bakers Street".
     $from =~ s/\s+/ /g;
@@ -220,12 +220,12 @@ sub set_node_mappings
             unless (ref($mappings->{$_}) eq 'ARRAY');
     }
     $self->{_user}     = 1;
-    $self->{_nodes}    = Travel::UK::London::Tube::Node::load_nodes($mappings);    
+    $self->{_nodes}    = Travel::UK::London::Tube::Node::load_nodes($mappings);
     $self->{_mappings} = $mappings;
     $self->{_lines}    = Travel::UK::London::Tube::Node::load_node_lines($mappings);
     $self->{_upcase}   = Travel::UK::London::Tube::Node::upcase_node_names($self->{_nodes});
     $self->{_table}    = _init_table($mappings);
-    
+
     # Do the sanity check on all the data.
     $self->_sanity_check();
 }
@@ -294,7 +294,7 @@ sub get_node_mappings
 
 =head2 get_node_lines()
 
-Returns all the tube line's defintions. For user defined node, it would return line definition 
+Returns all the tube line's defintions. For user defined node, it would return line definition
 provided by the user, if any, otherwise UNDEF.
 
   use strict; use warnings;
@@ -482,7 +482,7 @@ Node Code, "P" - Path to here and "L" - Length to reach "N" from "P".
   # have called method get_shortest_route().
   $tube->show_map_chart();
 
-  # You should expect the following output: 
+  # You should expect the following output:
   #  N  -  P  -  L
   # ---------------
   #  A  -  B  -  2
@@ -553,11 +553,11 @@ sub _sanity_check
         unless defined($mappings);
     croak("ERROR: Missing node line definitions.\n")
         unless defined($lines);
-        
+
     $node_count    = scalar(keys(%{$nodes}));
     $mapping_count = scalar(keys(%{$mappings}));
     $line_count    = scalar(keys(%{$lines}));
-    
+
     if ($mapping_count < $node_count)
     {
         $missing = undef;
