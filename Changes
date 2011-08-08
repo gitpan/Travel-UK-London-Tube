@@ -1,5 +1,9 @@
 Revision history for Travel::UK::London::Tube
 
+0.02    Mon Aug 08 10:22:11 2011
+        - Made Readonly v1.03 as minimum requirement.
+        - Prepared the distribution using the Module::Signature v0.68.
+
 0.02    Sat Apr 30 09:39:20 2011
         - Changed the encoding of unit test script to ASCII DOS|UNIX.
 

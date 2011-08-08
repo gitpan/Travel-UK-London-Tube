@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,15 +14,15 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 686c5fe1583a73d2353d9a112748011e91e7c62a Build.PL
-SHA1 41a8c1ec90a3a3bcf524c8ca0643c88ec6dcbe04 Changes
+SHA1 39dde5b6884d8f2d7210fdb09a9b8a04f8687b00 Build.PL
+SHA1 84e735f652487dcce4133fad1261fe08f0b9d1ec Changes
 SHA1 ad6417eedc1d19732d7452a7abfbd9c9a3366ae8 MANIFEST
 SHA1 7d20e4e840781030202bb045d5ab81b3fd1b68b0 MANIFEST.SKIP
-SHA1 a9a6b0f5d82a0370498e113e66433c42092b4820 META.yml
-SHA1 ed301357d42b15c1fc835d54a68a34ed6a27b5bd Makefile.PL
+SHA1 3a17948607353aa6ae878ca8ab6a3ee69d9bfa9c META.yml
+SHA1 1cbdbce7a968449191c5589d772e7a30dec7f504 Makefile.PL
 SHA1 4e4d6923da1b3b208c05262ef704f2cddf959fd8 README
-SHA1 1e6ec7b74633a5fb0cdc0bc77b191723344279d5 lib/Travel/UK/London/Tube.pm
-SHA1 07b7f373b1ddae011bfc1918938e2af08dbb273e lib/Travel/UK/London/Tube/Node.pm
+SHA1 e82f18193c137ae04d503d0c4097247d2949a693 lib/Travel/UK/London/Tube.pm
+SHA1 ae96058584275837815d47db8cabd0f773ee8164 lib/Travel/UK/London/Tube/Node.pm
 SHA1 c1906347b829c9ebb64dd8b7e492228ce79cb2ad t/00-load.t
 SHA1 a5fd7b8c89ed280b05b1a1b366dba17577b8bdb6 t/00-signature.t
 SHA1 2b8ffb7e4f399af95d092743846ac8d438f2c53e t/manifest.t
@@ -50,13 +50,13 @@ SHA1 943b4f242413460117aa2e37d15126d9517d3bde t/test-case-19.t
 SHA1 8f0ac9fdb3c63b6140675a4759de01769b67a212 t/test-case-20.t
 SHA1 8524d7489cd3f4c4fd02a9302ee2fd50616b95c2 t/test-case-21.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (MingW32)
+Version: GnuPG v2.0.14 (MingW32)
 
-iQEcBAEBAgAGBQJNu82IAAoJENoXJXWo7C/pj8gH/3wCNcVnv7TJvR8xGakj6nyX
-rADd7H7avbUfcN6+jEQO18kSrUEurBS76fyI191+pgZTb2R4C6jYqKeWsobuXQsZ
-/5JzC7G5y2jlH6nEy0NRP418ZEcj3ETXXkVF9A5crnxNGb5dixsoX0fvlfV+L+f6
-kwFSPUJNhyv3M4bEwtQQlEv3HOIsET/MxnGRSPHLevQRp+QXUk5K7qrk9+nE7ICI
-scX0fMxT/jkZ1XtnxrCAtSLemhXIcEsC2KQS4kYmVsBRCEBWNP6B2P4fjlZ3+9WW
-Zr5oOTxbEjvrdUJrnu9tQCYCc4B6WzFXY7lt1KkEA8sllGljvcSJY2vSMKyTy9w=
-=6556
+iQEcBAEBAgAGBQJOP6sjAAoJEPYcXBXhRYOhefoIAKSGBMReIvG/BPDt4H81nQ2q
+S1Q2gHEONMIAT+jkjDnfJzQreKuSdAKOyllxZ7gAhnhnjVN1v80aDyUHQQUx484f
+ZoIxbYYbmKTBuLk7MFFsn4VU4aNzz/3TImbbh5igd9MJ09Xsn9n70UbI11OEv/mz
+JjfTUmejSptU9IFMUhpWuYVzL59Feyq21NzgVDiYVyWZiv/S0p+2TJJLqVTXsk+U
+ZJwEg3woCXBI3qV6omHfDGqZoMl84ExyWxd3uBF6HbfyIelTNh5NBpjGzek5DJba
+0l5BHR8s6RlzkkwHzySYCQLK8Q8FjLtUmkjm+JwCUL9aW0l7Crm4ZEOMRxwTdbQ=
+=TXHu
 -----END PGP SIGNATURE-----

@@ -4,7 +4,7 @@ author:
   - 'Mohammad S Anwar <mohammad.anwar@yahoo.com>'
 build_requires:
   Module::Build: 0.36
-  Readonly: 0
+  Readonly: 1.03
   Test::More: 0
   Time::HiRes: 0
 configure_requires:
@@ -18,10 +18,10 @@ name: Travel-UK-London-Tube
 provides:
   Travel::UK::London::Tube:
     file: lib/Travel/UK/London/Tube.pm
-    version: 0.02
+    version: 0.03
   Travel::UK::London::Tube::Node:
     file: lib/Travel/UK/London/Tube/Node.pm
-    version: 0.02
+    version: 0.03
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03

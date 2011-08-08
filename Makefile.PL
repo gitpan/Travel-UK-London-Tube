@@ -7,7 +7,7 @@ WriteMakefile
     'clean'        => { FILES => 'Travel-UK-London-Tube-*' },
     'PREREQ_PM'    => {
         'Module::Build' => '0.36',
-        'Readonly'      => '0',
+        'Readonly'      => '1.03',
         'Test::More'    => '0',
         'Time::HiRes'   => '0'
     }

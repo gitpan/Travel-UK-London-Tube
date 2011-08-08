@@ -11,7 +11,7 @@ my $builder = Module::Build->new(
     add_to_cleanup      => [ 'Travel-UK-London-Tube-*' ],    
     build_requires      => {
         'Test::More'    => 0,
-        'Readonly'      => 0,
+        'Readonly'      => '1.03',
         'Module::Build' => 0.36,
         'Time::HiRes'   => 0,
     },
